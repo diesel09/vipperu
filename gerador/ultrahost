@@ -80,7 +80,7 @@ echo -ne "$(fun_trans "Desea Imprimir Resultados")? [S/N]: "; read yn
 return 0
 }
 #INICIA SCRIPT
-echo -e "\033[1;33m $(fun_trans "INICIALIZANDO PROCEDIMENTOS") (VPS-MX By: EliteMasterVIP)"
+echo -e "\033[1;33m $(fun_trans "INICIALIZANDO PROCEDIMENTOS") (VPS-MX By: ADMINISTRATOR)"
 msg -bar
 iniciar
 [[ $? = "0" ]] &&
