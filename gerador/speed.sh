@@ -2,7 +2,7 @@
 #19/06/2021
 
 echo "/root/velocity" > /bin/vlc && chmod +x /bin/vlc > /dev/null 2>&1
-link_bin="https://raw.githubusercontent.com/GeneradorVIP/VIPMODS/main/gerador/speedtest"
+link_bin="https://raw.githubusercontent.com/ADM-PERU/VIP/main/gerador/speedtest"
 [[ ! -e /bin/speedtest ]] && wget -O /bin/speedtest ${link_bin} > /dev/null 2>&1 && chmod +x /bin/speedtest
 
 inst_components () {
@@ -45,7 +45,7 @@ speedtest --share > speed
 echo ""
 clear
 echo -e "\033[0;34m======================================================\033[0m"
-echo -e " \033[1;33m        SpeedTest \033[1;32m[VPS-MX] By: EliteMasterVIP\033[0m"
+echo -e " \033[1;33m        SpeedTest \033[1;32m[VPS-MX] By: FANTASMIN  \033[0m"
 echo -e "\033[0;34m======================================================\033[0m"
 echo ""
 inst_components
