@@ -305,7 +305,7 @@ read -p "Enter"
 }
 
 atualizar_geb () {
-wget -O $HOME/instger.sh https://raw.githubusercontent.com/GeneradorVIP/VIPMODS/main/instgerador.sh &>/dev/null
+wget -O $HOME/instger.sh https://raw.githubusercontent.com/ADM-PERU/VIP/main/instgerador.sh &>/dev/null
 chmod +x $HOME/instger.sh
 cd $HOME
 ./instger.sh
