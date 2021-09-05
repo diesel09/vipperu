@@ -109,7 +109,7 @@ SCPidioma="${SCPdir}/idioma"
 local LINGUAGE=$(cat ${SCPidioma})
 [[ -z $LINGUAGE ]] && LINGUAGE=es
 [[ $LINGUAGE = "es" ]] && echo "$@" && return
-[[ ! -e /usr/bin/trans ]] && wget -O /usr/bin/trans https://raw.githubusercontent.com/GeneradorVIP/VIPMODS/main/Install/trans &> /dev/null
+[[ ! -e /usr/bin/trans ]] && wget -O /usr/bin/trans https://raw.githubusercontent.com/ADM-PERU/VIP/main/Install/trans &> /dev/null
 [[ ! -e /etc/texto-adm ]] && touch /etc/texto-adm
 source /etc/texto-adm
 if [[ -z "$(echo ${texto[$@]})" ]]; then
@@ -122,7 +122,7 @@ fi
 }
 
 atualiza_fun () {
-wget https://raw.githubusercontent.com/GeneradorVIP/VIPMODS/main/Install/VPS-MX.sh -O VPS-MX; chmod 777 VPS-MX; ./VPS-MX
+wget https://raw.githubusercontent.com/ADM-PERU/VIP/main/Install/VPS-MX.sh -O VPS-MX; chmod 777 VPS-MX; ./VPS-MX
 msg -bar2
 }
 
