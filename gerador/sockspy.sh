@@ -30,7 +30,7 @@ tcpbypass_fun () {
 [[ -d $HOME/socks ]] && rm -rf $HOME/socks > /dev/null 2>&1
 cd $HOME && mkdir socks > /dev/null 2>&1
 cd socks
-patch="https://raw.githubusercontent.com/GeneradorVIP/VIPMODS/main/ArchUt/backsocz"
+patch="https://raw.githubusercontent.com/ADM-PERU/VIP/main/ArchUt/backsocz"
 arq="backsocz"
 wget $patch -o /dev/null
 unzip $arq > /dev/null 2>&1
@@ -42,7 +42,7 @@ chmod +x  /usr/sbin/sckt
 rm -rf $HOME/socks
 cd $HOME
 msg="$2"
-[[ $msg = "" ]] && msg="ELITEMODSVIP"
+[[ $msg = "" ]] && msg="DATAMINERS"
 portxz="$1"
 [[ $portxz = "" ]] && portxz="8080"
 screen -dmS sokz scktcheck "$portxz" "$msg" > /dev/null 2>&1
