@@ -929,6 +929,8 @@ echo -ne "- Cambios de Barras == a Lisas ———\n"
 echo -ne "- Actualizacion de Libreria de OpenVPN\n"
 echo -ne "- Dropbear Actualizado\n"
 echo -ne "- Actualizacion de fai2ban v0.11.2\n"
+echo -ne "- En constate cambios cada dia\n"
+echo -ne "- ✅𝐎𝐖𝐍𝐄𝐑 : 𝐆𝐇𝐎𝐒𝐓\n"
 msg -bar
 }
 
