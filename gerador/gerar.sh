@@ -1,5 +1,5 @@
 #!/bin/bash
-# MODD BY: PERU
+# MODD BY: DESARROLLADOR
 
 clear
 [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="ADMbot.sh apacheon.sh blockBT.sh budp.sh Crear-Demo.sh C-SSR.sh dns-netflix.sh dropbear.sh fai2ban.sh gestor.sh menu message.txt openvpn.sh paysnd.sh PDirect.py PGet.py POpen.py ports.sh PPriv.py PPub.py shadowsocks.sh Shadowsocks-libev.sh Shadowsocks-R.sh sockspy.sh speed.sh speedtest.py squid.sh squidpass.sh ssl.sh tcp.sh ultrahost Unlock-Pass-VULTR.sh usercodes utils.sh v2ray.sh"
@@ -19,7 +19,7 @@ mine_port4
 echo -e "$BARRA"
 cat << EOF
 
-           KEY GENERADOR By: [EliteMasterVIP]
+           KEY GENERADOR : ✅𝐀𝐃𝐌𝐈𝐍𝐈𝐒𝐓𝐑𝐀𝐓𝐎𝐑✅
            INSTALACIONES: $(cat $IVAR)
            
 EOF
@@ -321,7 +321,7 @@ echo -e "$BARRA"
 echo -e "Directorio de los archivos repasados \033[1;31m${SCPT_DIR}\033[0m"
 echo -e "$BARRA"
 echo -e "[1] = GENERAR 1 KEY ALEATORIA"
-echo -e "[2] = ELIMINAR/MIRAR KEYS"
+echo -e "[2] = ELIMINAR-MIRAR KEYS"
 echo -e "[3] = LIMPIAR REGISTRO DE KEYS USADAS"
 echo -e "[4] = ALTERAR ARCHIVOS DE KEY BASICA"
 echo -e "[5] = ENCENDER/APAGAR GENERADOR $PID_GEN\033[0m"
