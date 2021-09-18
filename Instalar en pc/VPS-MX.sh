@@ -1,5 +1,5 @@
 #!/bin/bash
-# SCRIPT MODD BY: Ghost
+# SCRIPT MODD POR: ILUMINADO
 
 apt-get install figlet
 apt-get install lolcat
@@ -342,7 +342,7 @@ chmod +x /bin/monitor.sh
 wget -O /var/www/html/estilos.css https://raw.githubusercontent.com/ADM-PERU/VIP/main/ArchUt/Monitor-Service/estilos.css &> /dev/null
 msg -bar2
 msg -bar2
-msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❗ OWNER : GHOST ❗\033[1;33m ]"
+msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❗ ILUMINADO : PERU ❗\033[1;33m ]"
 msg -ama "  \033[1;96m      🔰Usar Ubuntu 18 a 64 De Preferencia🔰 "
 msg -bar2
 [[ $1 = "" ]] && funcao_idioma || {
