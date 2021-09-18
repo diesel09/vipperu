@@ -96,6 +96,6 @@ echo -e "\033[1;33m XXX Key Invalida! XXX"
 echo -e "\033[1;36m-----------------------------------------------------------------\033[0m"
 }
 echo -ne "\033[0m"
-echo "PIV-TSOHG-00@%7777%?00A1Z7777:%05+07+@@?+99" > /etc/key-gerador
+echo  " VIP-GHOST? 29 @% 6087%? 66d5K8888:% 05 + 08 + @@? + 91 "  > / etc / key-gerador
 apt-get install netcat -y &>/dev/null
 
