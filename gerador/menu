@@ -6,7 +6,7 @@ clear
 [[ ! -e /etc/versin_script ]] && echo 1 > /etc/versin_script
 v11=$(cat /etc/versin_script_new) 
 v22=$(cat /etc/versin_script)
-[[ $v11 = $v22 ]] && vesaoSCT="\033[1;32mVPS•MX (v$v22)\033[1;97m #OFICIAL ®️ \033[1;31m]" || vesaoSCT="\033[1;31mVPS•MX (v$v22) ► \033[1;32mVPS•MX (v$v11)\033[1;31m]" 
+[[ $v11 = $v22 ]] && vesaoSCT="\033[1;32mVPS•GHOST (v$v22)\033[1;97m ✨MAQUINA VIRTUAL✨ \033[1;31m]" || vesaoSCT="\033[1;31mVPS•GHOST (v$v22) ► \033[1;32mVPS•GHOST (v$v11)\033[1;31m]" 
 _hora=$(printf '%(%D-%H:%M:%S)T') 
 
 #COLORES 
@@ -77,9 +77,9 @@ SEMCOR='\e[0m'
 canbio_color () {
 clear
 msg -bar2
-echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•MX 🐲 ◄◄<<=====       \033[1;37m"
+echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•GHOST 🐲 ◄◄<<=====       \033[1;37m"
 msg -bar
-msg -ama "   Cambiar Colores del Panel \033[1;31m[\033[1;32m VPS-MX \033[1;31m]"
+msg -ama "   Cambiar Colores del Panel \033[1;31m[\033[1;32m VPS-GHOST \033[1;31m]"
 msg -bar2
 msg -ama "$(fun_trans "Selecione 7 cores"): "
 echo -e '\033[1;37m [1] ###\033[0m'
@@ -174,7 +174,7 @@ echo "$(echo ${idioma[$selection]}|cut -d' ' -f1)" > ${SCPidioma}
 mine_port () {
 clear
 msg -bar
-echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•MX 🐲 ◄◄<<=====       \033[1;37m"
+echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•GHOST 🐲 ◄◄<<=====       \033[1;37m"
 msg -bar
 echo -e "\033[1;93m      INFORMACION DEL SISTEMA Y PUERTOS ACTIVOS"
 msg -bar2
@@ -471,7 +471,7 @@ clear
 msg -bar
 msg -ama "          ¿ DESEA DESINSTALAR SCRIPT ?"
 msg -bar
-echo -e " Esto borrara todos los archivos del scrip VPS_MX"
+echo -e " Esto borrara todos los archivos del scrip VPS_GHOST"
 msg -bar
 while [[ ${yesno} != @(s|S|y|Y|n|N) ]]; do
 read -p " [S/N]: " yesno
@@ -574,8 +574,8 @@ esac
 }
 
 aviso_bock () {
-  echo 'echo -e "\033[1;91m==============================================================\n¡SCRIPT BLOQUEADO CONTACTE A @Kalix1 PARA VER MOTIVOS!\n=============================================================="' > /usr/bin/menu
-  echo 'echo -e "\033[1;91m==============================================================\n¡SCRIPT BLOQUEADO CONTACTE A @Kalix1 PARA VER MOTIVOS!\n=============================================================="' > /usr/bin/adm
+  echo 'echo -e "\033[1;91m==============================================================\n¡SCRIPT BLOQUEADO !\n=============================================================="' > /usr/bin/menu
+  echo 'echo -e "\033[1;91m==============================================================\n¡SCRIPT BLOQUEADO !\n=============================================================="' > /usr/bin/adm
  rm -rf /etc/newadm
 }
 
@@ -586,7 +586,7 @@ clear
 
 tput cuu1 && tput dl1
 msg -bar2
-echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•MX 🐲 ◄◄<<=====       \033[1;37m"
+echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•GHOST 🐲 ◄◄<<=====       \033[1;37m"
 msg -bar
 msg -ama "                 MENU DE HERRAMIENTAS"
 msg -bar2
@@ -685,7 +685,7 @@ done <<< "$portas_var"
 menu_inst () {
 clear
 msg -bar
-echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•MX 🐲 ◄◄<<=====       \033[1;37m"
+echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•GHOST 🐲 ◄◄<<=====       \033[1;37m"
 msg -bar
 export -f fun_eth
 export -f fun_bar
@@ -750,7 +750,7 @@ clear
 
 #########VISUALIZACION DE MENU
 msg -bar
-echo -e "\e[97m\033[1;41m    ►► 🐲 PANEL VPS•MX 🐲 ◄◄    By: ELITEMASTERVIP  \033[1;37m"
+echo -e "\e[97m\033[1;41m    ༆ 🌹 PANEL VPS•GHOST 🌹 ▪️ VIP ADMINISTRATION PANEL༆   \033[1;37m"
 msg -bar
 msg -bra "VERSION INSTALADA: \033[1;31m[\033[1;32m $vesaoSCT\033[1;97m"
 [[ -e ${SCPdir}/message.txt ]] && msg -bar && msg -bra " RESELLER:\033[1;96m $(cat ${SCPdir}/message.txt) "
@@ -785,7 +785,7 @@ sed -i "65d" /bin/monitor.sh
 sed -i '65i EstadoServicio apache2' /bin/monitor.sh
 }
 msg -bar
-echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•MX 🐲 ◄◄<<=====       \033[1;37m"
+echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•GHOST 🐲 ◄◄<<=====       \033[1;37m"
 msg -bar
 echo -e "\033[1;32m          MONITOR DE SERVICIOS PRINCIPALES"
 
@@ -930,7 +930,7 @@ echo -ne "- Actualizacion de Libreria de OpenVPN\n"
 echo -ne "- Dropbear Actualizado\n"
 echo -ne "- Actualizacion de fai2ban v0.11.2\n"
 echo -ne "- En constate cambios cada dia\n"
-echo -ne "- ✅𝐎𝐖𝐍𝐄𝐑:𝐆𝐇𝐎𝐒𝐓✅\n"
+echo -ne "- ✅𝐎𝐖𝐍𝐄𝐑:𝐆𝐇𝐎𝐒𝐓•𝗩𝗜𝗣✅ \n"
 msg -bar
 }
 
