@@ -67,7 +67,4 @@ sleep 5
 cd $WORKING_DIR_ORIGINAL
 clear
 vpsmxup
-
-cd $WORKING_DIR_ORIGINAL
-clear
-vpsmxup
+#fin
