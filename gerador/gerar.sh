@@ -19,7 +19,7 @@ mine_port4
 echo -e "$BARRA"
 cat << EOF
 
-           KEY GENERADOR : ✅𝐀𝐃𝐌𝐈𝐍𝐈𝐒𝐓𝐑𝐀𝐓𝐎𝐑✅            
+           KEY GENERADOR : ✅𝐀𝐃𝐌𝐈𝐍𝐈𝐒𝐓𝐑𝐀𝐓𝐎𝐑 ✅            
            INSTALACIONES: $(cat $IVAR)
            
 EOF
