@@ -750,7 +750,7 @@ clear
 
 #########VISUALIZACION DE MENU
 msg -bar
-echo -e "\e[97m\033[1;41m   ༒︎ 🐲 PANEL VPS•GHOST 🐲 ADMINISTRATION PANEL ༒︎   \033[1;37m"
+echo -e "\e[97m\033[1;41m ༒︎ 🐲 PANEL VPS•GHOST 🐲 ADMINISTRATION PANEL ༒︎   \033[1;37m"
 msg -bar
 msg -bra "VERSION INSTALADA: \033[1;31m[\033[1;32m $vesaoSCT\033[1;97m"
 [[ -e ${SCPdir}/message.txt ]] && msg -bar && msg -bra " RESELLER:\033[1;96m $(cat ${SCPdir}/message.txt) "
@@ -930,7 +930,7 @@ echo -ne "- Actualizacion de Libreria de OpenVPN\n"
 echo -ne "- Dropbear Actualizado\n"
 echo -ne "- Actualizacion de fai2ban v0.11.2\n"
 echo -ne "- En constate cambios cada dia\n"
-echo -ne "- ✅𝐎𝐖𝐍𝐄𝐑:𝐆𝐇𝐎𝐒𝐓•𝗩𝗜𝗣 ✅   \n"
+echo -ne "- 🐲𝐎𝐖𝐍𝐄𝐑:𝐆𝐇𝐎𝐒𝐓•𝗩𝗜𝗣🐲\n"
 msg -bar
 }
 
