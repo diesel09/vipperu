@@ -39,7 +39,7 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
 ### PAQUETES PRINCIPALES 
 msg -bar
 echo -e "\033[97m"
-echo -e "\033[41m -- INSTALACION DE PAQUETES NECESARIOS PARA VPS-MX -- "
+echo -e "\033[41m -- INSTALACION DE PAQUETES NECESARIOS PARA VPS-PERU -- "
 echo -e "\033[100m  PONER ATENCION A INSTALACION PARA SIGUIENTE PREGUNTA"
 echo -e "\033[97m"
 msg -bar
@@ -206,7 +206,7 @@ function_verify () {
 
 funcao_idioma () {
 msg -bar2
-figlet "    -VPS MX-" | lolcat 
+figlet "    -VPS PERU-" | lolcat 
 echo -e "     ESTE SCRIPT ESTA OPTIMIZADO A IDIOMA ESPAÑOL"
 msg -bar2
 pv="$(echo es)"
