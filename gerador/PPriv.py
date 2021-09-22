@@ -23,7 +23,7 @@ subprocess.call("clear",shell=True)
 if sys.argv[2:]:
  msg1 = sys.argv[2]
 else:
- msg1 = 'VPS-MX'
+ msg1 = 'VPS-PERU'
 
 if sys.argv[3:]:
  server = sys.argv[3]
