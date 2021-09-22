@@ -411,7 +411,3 @@ invalid_key
 fi
 rm -rf instalscript.sh
 rm -rf VPS-MX.sh
-id_key
-fi
-rm -rf instalscript.sh
-rm -rf VPS-MX.sh
