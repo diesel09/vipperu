@@ -187,7 +187,7 @@ msg -azu "$(fun_trans "PUERTOS REDEFINIDOS")"
 msg -bar
 }
 main_fun () {
-msg -azu "$(fun_trans "Gestor de Puertos VPS-MX")"
+msg -azu "$(fun_trans "Gestor de Puertos VPS-GHOST")"
 msg -bar
 unset newports
 i=0
