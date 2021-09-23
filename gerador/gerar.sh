@@ -234,9 +234,9 @@ let i++
 for arqs in `ls $DIR|grep -v "ERROR-KEY"|grep -v ".name"`; do
 arqsx=$(ofus "$IP:8888/$arqs/$LIST")
 if [[ ! -e ${DIR}/${arqs}/used.date ]]; then
-echo -e "\033[1;32m[$i] $arqsx ($(cat ${DIR}/${arqs}.name))\033[1;33m (AGUARDANDO USO)\033[0m"
+echo -e "\033[1;32m[$i] $arqsx ($(cat ${DIR}/${arqs}.name))\033[1;33m (⚠️𝐒𝐈𝐍 𝐔𝐒𝐎)\033[0m"
 else
-echo -e "\033[1;31m[$i] $arqsx ($(cat ${DIR}/${arqs}.name))\033[1;33m ($(cat ${DIR}/${arqs}/used.date) IP: $(cat ${DIR}/${arqs}/used))\033[0m"
+echo -e "\033[1;31m[$i] $arqsx ($(cat ${DIR}/${arqs}.name))\033[1;33m ($(cat ${DIR}/${arqs}/used.date) IP: $(cat ${DIR}/${arqs}/✅𝐔𝐒𝐄𝐃))\033[0m"
 fi
 keys="$keys $arqs"
 let i++
