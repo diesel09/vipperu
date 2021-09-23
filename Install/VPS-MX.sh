@@ -302,12 +302,12 @@ chmod +x ${ARQ}/$1
 
 NOTIFY () {
 msg -bar
-msg -ama " Notify-BOT (Notificasion Remota)| VPS-MX "
+msg -ama " Notify-BOT (Notificasion Remota)| VPS-GHOST "
 msg -bar
 echo -e "\033[1;94m Es una opcion para notificar cuando\n un usuario sea bloquedo o este expirado, e info de VPS."
-echo -e "\033[1;97m Deve usar el BOT de Telegram @Noti_VPSMX_Bot"
-echo -e "\033[1;92m Para sacar su ID solo Meta el comando /MENU en el BOT @USA1_BOT"
-echo -e "\033[1;92m Aparecera un pequeño menu donde mostrara su  👤 ID"
+echo -e "\033[1;97m Debe mantenerse atento a posible actualizaciónes"
+echo -e "\033[1;92m Para obtener su ID contacte a @EliteMasterGO"
+echo -e "\033[1;92m OWNER : GHOST"
 msg -bar
 echo -e "\033[1;97m >>> Ingrese un nombre para el ADMIN - VPS:\033[0;37m"; read -p " " nombr
 echo "${nombr}" > /etc/newadm/ger-user/nombre.log
@@ -338,7 +338,7 @@ chmod +x /bin/monitor.sh
 wget -O /var/www/html/estilos.css https://raw.githubusercontent.com/ADM-PERU/VIP/main/ArchUt/Monitor-Service/estilos.css &> /dev/null
 msg -bar2
 msg -bar2
-msg -ama "     [ VPS - GHOST - SCRIPT \033[1;97m ❗MAQUINA VIRTUAL❗\033[1;33m ]"
+msg -ama "     [ VPS - GHOST - SCRIPT \033[1;97m ✨MAQUINA VIRTUAL✨\033[1;33m ]"
 msg -ama "  \033[1;96m      🔰Usar Ubuntu 18 a 64 De Preferencia🔰 "
 msg -bar2
 [[ $1 = "" ]] && funcao_idioma || {
@@ -356,13 +356,13 @@ msg -bar2 && msg -verm "#¡Key Invalida#! " && msg -bar2
 exit 1
 }
 while [[ ! $Key ]]; do
-msg -bar2 && msg -ne "=> COLOCA TU KEY #: " && read Key
+msg -bar2 && msg -ne "=> 𝐈𝐍𝐒𝐄𝐑𝐓𝐀 𝐓𝐔 𝐊𝐄𝐘 #: " && read Key
 tput cuu1 && tput dl1
 done
 msg -ne "# Verificando Key # : "
 cd $HOME
-wget -O $HOME/lista-arq $(ofus "$Key")/$IP > /dev/null 2>&1 && echo -e "\033[1;32m Key Completa" || {
-   echo -e "\033[1;91m Key Incompleta"
+wget -O $HOME/lista-arq $(ofus "$Key")/$IP > /dev/null 2>&1 && echo -e "\033[1;32m ✅𝐊𝐄𝐘 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐀." || {
+   echo -e "\033[1;91m ⚠️𝐊𝐄𝐘 𝐈𝐌𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐀."
    invalid_key
    exit
    }
@@ -372,11 +372,11 @@ function_verify
 updatedb
 if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") ]]; then
    msg -bar2
-   msg -ama "$(source trans -b es:${id} "BEM VINDO, OBRIGADO POR UTILIZAR"|sed -e 's/[^a-z -]//ig'): \033[1;31m[VPS-MX]"
+   msg -ama "$(source trans -b es:${id} "✅VERIFICADO CORRECTAMENTE..."|sed -e 's/[^a-z -]//ig'): \033[1;31m[OWNER : GHOST]"
    REQUEST=$(ofus "$Key"|cut -d'/' -f2)
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
    pontos="."
-   stopping="$(source trans -b es:${id} "Verificando Atualizacoes"|sed -e 's/[^a-z -]//ig')"
+   stopping="$(source trans -b es:${id} "Verificando Actualizaciones"|sed -e 's/[^a-z -]//ig')"
    for arqx in $(cat $HOME/lista-arq); do
    msg -verm "${stopping}${pontos}"
    wget -O ${SCPinstal}/${arqx} ${IP}:81/${REQUEST}/${arqx} > /dev/null 2>&1 && verificar_arq "${arqx}" || error_fun
@@ -395,8 +395,8 @@ if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") 
    echo "$Key" > ${SCPdir}/key.txt
    [[ -d ${SCPinstal} ]] && rm -rf ${SCPinstal}   
    [[ ${#id} -gt 2 ]] && echo "es" > ${SCPidioma} || echo "${id}" > ${SCPidioma}
-   echo -e "${cor[2]}         ESCRIBE n PARA CONTINUAR (Default n)"
-   echo -e "\033[1;34m  (PROCESO FINALIZANDO...)"
+   echo -e "${cor[2]}         ESCRIBE n PARA CONTINUAR (🐲Default n🐲)"
+   echo -e "\033[1;34m  🚨PROCESO FINALIZANDO..."
    msg -bar2
    read -p " [ s | n ]: " NOTIFY   
    [[ "$NOTIFY" = "s" || "$NOTIFY" = "S" ]] && NOTIFY
