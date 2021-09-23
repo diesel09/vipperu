@@ -750,7 +750,7 @@ clear
 
 #########VISUALIZACION DE MENU
 msg -bar
-echo -e "\e[97m\033[1;41m   ༒︎ 🐲 PANEL VPS•GHOST 🐲 ADMINISTRATION PANEL ༒︎    \033[1;37m"
+echo -e "\e[97m\033[1;41m   ༒︎🐲 PANEL VPS•GHOST 🐲 ADMINISTRATION PANEL༒︎    \033[1;37m"
 msg -bar
 msg -bra "VERSION INSTALADA: \033[1;31m[\033[1;32m $vesaoSCT\033[1;97m"
 [[ -e ${SCPdir}/message.txt ]] && msg -bar && msg -bra " RESELLER:\033[1;96m $(cat ${SCPdir}/message.txt) "
@@ -916,21 +916,27 @@ limseg="$(less /etc/newadm/ger-user/tiemlim.log)"
 creditoss () {
 clear 
 msg -bar
-echo -ne " \033[1;93m          CREDITOS Y REGISTRO DE CAMBIOS\n"
+echo -ne " \033[1;93m         🔰OWNER : GHOST [CREDITOS-INFORMACION]\n"
 msg -bar
-[[ -e ${SCPdir}/message.txt ]] && msg -bra " RESELLER AUTORIZADO: \n\033[1;96m $(cat ${SCPdir}/message.txt) "
-[[ -e ${SCPdir}/key.txt ]] && msg -bra " KEY DE REGISTRO:\n \033[1;93m $(cat ${SCPdir}/key.txt)"
+[[ -e ${SCPdir}/message.txt ]] && msg -bra " ✅RESELLER AUTORIZADO: \n\033[1;96m $(cat ${SCPdir}/message.txt) "
+[[ -e ${SCPdir}/key.txt ]] && msg -bra " KEY DE REGISTRO VPS•GHOST [🇵🇪•🇳🇮]:\n \033[1;93m $(cat ${SCPdir}/key.txt)"
 msg -bar
-echo -ne "\033[1;97m   CAMBIOS DE LA VERSION (v$v11)\n"
-echo -ne "- Actualizaciones de Protocolos\n"
-echo -ne "- Nuevo diseño Instalacion de BOT Manager\n"
-echo -ne "- Nuevos comandos en el BOT Manager\n"
-echo -ne "- Cambios de Barras == a Lisas ———\n"
-echo -ne "- Actualizacion de Libreria de OpenVPN\n"
-echo -ne "- Dropbear Actualizado\n"
-echo -ne "- Actualizacion de fai2ban v0.11.2\n"
-echo -ne "- En constate cambios cada dia\n"
-echo -ne "- 🐲OWNER : GHOST🐲\n"
+echo -ne "\033[1;97m   ✨MAQUINA VIRTUAL✨ \n"
+echo -ne "➳ GRANDES ACTUALIZACIONES A DIARIO.\n"
+echo -ne "➳ DISEÑOS UNICOS VPS•PERU.\n"
+echo -ne "➳ TELEGRAM BOT GEN•KEY PREMIUM.\n"
+echo -ne "➳ 🐲VIP : \n"
+echo -ne "➳ ACCESO PREMIUM A TU ADMINISTRACION DE PANEL.\n"
+echo -ne "➳ TEN EN CUENTA EN CONFIGURAR CORRECTAMENTE LOS  \n"
+echo -ne "➳ INSTALADORES DE PROTOCOLOS PREMIUM.\n"
+echo -ne "➳ DISFRUTE DE SU VPS•PERU Y GRACIAS POR CONTAR CON NOSOTROS.\n"
+echo -ne "➳ ADMINISTRATOR : GHOST\n"
+echo -ne "➳ "VPS•GHOST"ᴛᴏᴅᴏs ʟᴏs ᴅᴇʀᴇᴄʜᴏs ʀᴇsᴇʀᴠᴀᴅᴏs\n"
+echo -ne "➳ ǫᴜᴇᴅᴀ ᴘʀᴏʜɪʙɪᴅᴀ ʟᴀ ʀᴇᴘʀᴏᴅᴜᴄᴄɪᴏɴ ᴛᴏᴛᴀʟ ᴏ ᴘᴀʀᴄɪᴀʟ\n"
+echo -ne "➳ ᴅᴇʟ ᴍᴀᴛᴇʀɪᴀʟ ᴘʀᴏᴛᴇɢɪᴅᴏ ᴘᴏʀ ᴇsᴛᴏs ᴅᴇʀᴇᴄʜᴏs ᴅᴇ ᴘʀᴏᴘɪᴇᴅᴀᴅ\n"
+echo -ne "➳ ɪɴᴛᴇʟᴇᴄᴛᴜᴀʟ , ᴏ sᴜ ᴜsᴏ ᴇɴ ᴄᴜᴀʟǫᴜɪᴇʀ ғᴏʀᴍᴀ , sɪɴ ᴇʟ ᴘᴇʀᴍɪsᴏ\n"
+echo -ne "➳ ᴘᴇʀᴍɪsᴏ ᴘᴏʀ ᴇsᴄʀɪᴛᴏ ᴅᴇ "VPS•GHOST"\n"
+echo -ne "➳ 🔰𝐏𝐀𝐑𝐓𝐍𝐄𝐑𝐒 : [🇵🇪•🇳🇮]\n"
 msg -bar
 }
 
