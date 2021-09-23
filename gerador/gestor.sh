@@ -176,7 +176,7 @@ echo -e " FECHA LOCAL PERU APLICADA!"
 gestor_fun () {
 clear
 msg -bar
-echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•MX 🐲 ◄◄<<=====       \033[1;37m"
+echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•GHOST 🐲 ◄◄<<=====       \033[1;37m"
 msg -bar
 echo -e " ${cor[3]}             AJUSTES INTERNOS DEL VPS  "
 msg -bar
@@ -187,7 +187,7 @@ echo -e "${cor[4]} [3] > \033[1;36mREINICIAR VPS"
 echo -e "${cor[4]} [4] > \033[1;36mCAMBIAR HOSTNAME VPS"
 echo -e "${cor[4]} [5] > \033[1;36mCAMBIAR CONTRASEÑA ROOT"
 echo -e "${cor[4]} [6] > \033[1;36mCAMBIAR HORA LOCAL MX"
-echo -e "${cor[4]} [7] > \033[1;36mCAMBIAR HORA LOCAL PERU"
+echo -e "${cor[4]} [7] > \033[1;36mCAMBIAR HORA LOCAL PERU PREMIUM"
 echo -e "${cor[2]} [8] > \033[1;100mAGREGAR ROOT a GoogleCloud y Amazon \033[0;37m"
 echo -e "${cor[4]} [0] > VOLVER"
 while [[ ${opx} != @(0|[1-9]) ]]; do
