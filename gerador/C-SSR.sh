@@ -347,7 +347,7 @@ View_User_info(){
 	clear 
 	echo -e " Usuario [{user_name}] Informacion de Cuenta:"
 msg -bar
-    echo -e " PANEL VPS-MX"
+    echo -e " PANEL VPS-GHOST"
 	
 	echo -e " IP : ${Green_font_prefix}${ip}${Font_color_suffix}"
 
@@ -388,8 +388,8 @@ Set_config_user(){
 msg -bar
 	echo -ne "\e[92m 1) Ingrese un nombre al usuario que desea Configurar\n (No repetir, o se marcara incorrectamente!)\n"
 msg -bar
-	stty erase '^H' && read -p "(Predeterminado: VPS-MX):" ssr_user
-	[[ -z "${ssr_user}" ]] && ssr_user="VPS-MX"
+	stty erase '^H' && read -p "(Predeterminado: VPS-GHOST):" ssr_user
+	[[ -z "${ssr_user}" ]] && ssr_user="VPS-GHOST"
 	echo && echo -e "	Nombre de usuario : ${Green_font_prefix}${ssr_user}${Font_color_suffix}" && echo
 }
 Set_config_port(){
@@ -417,8 +417,8 @@ Set_config_password(){
 msg -bar
 	echo -e "\e[92m 3) Por favor ingrese una contrasena para el Usuario"
 msg -bar
-	stty erase '^H' && read -p "(Predeterminado: VPS-MX):" ssr_password
-	[[ -z "${ssr_password}" ]] && ssr_password="VPS-MX"
+	stty erase '^H' && read -p "(Predeterminado: VPS-GHOST):" ssr_password
+	[[ -z "${ssr_password}" ]] && ssr_password="VPS-GHOST"
 	echo && echo -e "	contrasena : ${Green_font_prefix}${ssr_password}${Font_color_suffix}" && echo
 }
 Set_config_method(){
@@ -1992,7 +1992,7 @@ if [[ "${action}" == "clearall" ]]; then
 elif [[ "${action}" == "monitor" ]]; then
 	crontab_monitor_ssr
 else
-echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•MX 🐲 ◄◄<<=====       \033[1;37m"
+echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•GHOST 🐲 ◄◄<<=====       \033[1;37m"
 msg -bar
 echo -e "        Controlador de ShadowSock-R  ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
 $(msg -bar)
