@@ -6,7 +6,7 @@ clear
 [[ ! -e /etc/versin_script ]] && echo 1 > /etc/versin_script
 v11=$(cat /etc/versin_script_new) 
 v22=$(cat /etc/versin_script)
-[[ $v11 = $v22 ]] && vesaoSCT="\033[1;32mVPS•GHOST (v$v22)\033[1;97m ✨𝐃𝐑𝐎𝐏𝐋𝐄𝐓 ✨ \033[1;31m]" || vesaoSCT="\033[1;31mVPS•GHOST (v$v22) ► \033[1;32mVPS•GHOST (v$v11)\033[1;31m]" 
+[[ $v11 = $v22 ]] && vesaoSCT="\033[1;32mVPS•GHOST (v$v22)\033[1;97m ✨𝐃𝐑𝐎𝐏𝐋𝐄𝐓✨:: \033[1;31m]" || vesaoSCT="\033[1;31mVPS•GHOST (v$v22) ► \033[1;32mVPS•GHOST (v$v11)\033[1;31m]" 
 _hora=$(printf '%(%D-%H:%M:%S)T') 
 
 #COLORES 
