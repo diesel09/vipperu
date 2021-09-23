@@ -750,7 +750,7 @@ clear
 
 #########VISUALIZACION DE MENU
 msg -bar
-echo -e "\e[97m\033[1;41m   ༒︎🐲 PANEL VPS•GHOST 🐲 ADMINISTRATION PANEL༒︎   :::::\033[1;37m"
+echo -e "\e[97m\033[1;41m   ༒︎🐲 PANEL VPS•GHOST 🐲 ADMINISTRATION PANEL༒︎   ::::\033[1;37m"
 msg -bar
 msg -bra "VERSION INSTALADA: \033[1;31m[\033[1;32m $vesaoSCT\033[1;97m"
 [[ -e ${SCPdir}/message.txt ]] && msg -bar && msg -bra " RESELLER:\033[1;96m $(cat ${SCPdir}/message.txt) "
