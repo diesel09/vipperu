@@ -343,7 +343,7 @@ wget -O /var/www/html/estilos.css https://raw.githubusercontent.com/ADM-PERU/VIP
 msg -bar2
 msg -bar2
 msg -ama "     [ VPS - GHOST - SCRIPT \033[1;97m ✨MAQUINA VIRTUAL✨\033[1;33m ]"
-msg -ama "  \033[1;96m    🔰Usar Ubuntu 18 a 64 De Preferencia🔰"
+msg -ama "  \033[1;96m     🔰Usar Ubuntu 18 a 64 De Preferencia🔰   "
 msg -bar2
 [[ $1 = "" ]] && funcao_idioma || {
 [[ ${#1} -gt 2 ]] && funcao_idioma || id="$1"
@@ -365,8 +365,8 @@ tput cuu1 && tput dl1
 done
 msg -ne "# Verificando Key # : "
 cd $HOME
-wget -O $HOME/lista-arq $(ofus "$Key")/$IP > /dev/null 2>&1 && echo -e "\033[1;32m✅𝐊𝐄𝐘 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐀." || {
-   echo -e "\033[1;91m⚠️𝐈𝐍𝐂𝐎𝐑𝐑𝐄𝐂𝐓𝐎."
+wget -O $HOME/lista-arq $(ofus "$Key")/$IP > /dev/null 2>&1 && echo -e "\033[1;32m ✅𝐊𝐄𝐘 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐀.  " || {
+   echo -e "\033[1;91m ⚠️𝐈𝐍𝐂𝐎𝐑𝐑𝐄𝐂𝐓𝐎. "
    invalid_key
    exit
    }
