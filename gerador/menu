@@ -916,27 +916,27 @@ limseg="$(less /etc/newadm/ger-user/tiemlim.log)"
 creditoss () {
 clear 
 msg -bar
-echo -ne " \033[1;93m         🔰OWNER : GHOST [CREDITOS-INFORMACION]\n"
+echo -ne " \033[1;93m       🔰OWNER : GHOST [CREDITOS-INFORMACION]\n"
 msg -bar
 [[ -e ${SCPdir}/message.txt ]] && msg -bra " ✅RESELLER AUTORIZADO: \n\033[1;96m $(cat ${SCPdir}/message.txt) "
 [[ -e ${SCPdir}/key.txt ]] && msg -bra " KEY DE REGISTRO VPS•GHOST [🇵🇪•🇳🇮]:\n \033[1;93m $(cat ${SCPdir}/key.txt)"
 msg -bar
 echo -ne "\033[1;97m   ✨MAQUINA VIRTUAL✨ \n"
-echo -ne "➳ GRANDES ACTUALIZACIONES A DIARIO.\n"
-echo -ne "➳ DISEÑOS UNICOS VPS•PERU.\n"
-echo -ne "➳ TELEGRAM BOT GEN•KEY PREMIUM.\n"
+echo -ne "➳ GRANDES ACTUALIZACIONES A DIARIO.:\n"
+echo -ne "➳ DISEÑOS UNICOS VPS•PERU.:\n"
+echo -ne "➳ TELEGRAM BOT GEN•KEY PREMIUM.:\n"
 echo -ne "➳ 🐲VIP : \n"
-echo -ne "➳ ACCESO PREMIUM A TU ADMINISTRACION DE PANEL.\n"
-echo -ne "➳ TEN EN CUENTA EN CONFIGURAR CORRECTAMENTE LOS  \n"
-echo -ne "➳ INSTALADORES DE PROTOCOLOS PREMIUM.\n"
-echo -ne "➳ DISFRUTE DE SU VPS•PERU Y GRACIAS POR CONTAR CON NOSOTROS.\n"
-echo -ne "➳ ADMINISTRATOR : GHOST\n"
+echo -ne "➳ ACCESO PREMIUM A TU ADMINISTRACION DE PANEL.:\n"
+echo -ne "➳ TEN EN CUENTA EN CONFIGURAR CORRECTAMENTE LOS\n"
+echo -ne "➳ INSTALADORES DE PROTOCOLOS PREMIUM.:\n"
+echo -ne "➳ DISFRUTE DE SU VPS•PERU Y GRACIAS POR CONTAR CON NOSOTROS.:\n"
+echo -ne "➳ ADMINISTRATOR : GHOST:\n"
 echo -ne "➳ "VPS•GHOST"ᴛᴏᴅᴏs ʟᴏs ᴅᴇʀᴇᴄʜᴏs ʀᴇsᴇʀᴠᴀᴅᴏs\n"
 echo -ne "➳ ǫᴜᴇᴅᴀ ᴘʀᴏʜɪʙɪᴅᴀ ʟᴀ ʀᴇᴘʀᴏᴅᴜᴄᴄɪᴏɴ ᴛᴏᴛᴀʟ ᴏ ᴘᴀʀᴄɪᴀʟ\n"
 echo -ne "➳ ᴅᴇʟ ᴍᴀᴛᴇʀɪᴀʟ ᴘʀᴏᴛᴇɢɪᴅᴏ ᴘᴏʀ ᴇsᴛᴏs ᴅᴇʀᴇᴄʜᴏs ᴅᴇ ᴘʀᴏᴘɪᴇᴅᴀᴅ\n"
 echo -ne "➳ ɪɴᴛᴇʟᴇᴄᴛᴜᴀʟ , ᴏ sᴜ ᴜsᴏ ᴇɴ ᴄᴜᴀʟǫᴜɪᴇʀ ғᴏʀᴍᴀ , sɪɴ ᴇʟ ᴀᴄᴄᴇsᴏ\n"
-echo -ne "➳ ᴘʀᴇᴍɪᴜᴍ ᴅᴇʟ ᴘᴇʀᴍɪsᴏ ᴘᴏʀ ᴇsᴄʀɪᴛᴏ ᴅᴇ "VPS•GHOST"\n"
-echo -ne "➳ 🔰𝐏𝐀𝐑𝐓𝐍𝐄𝐑𝐒 : [🇵🇪•🇳🇮]\n"
+echo -ne "➳ ᴘʀᴇᴍɪᴜᴍ ᴅᴇʟ ᴘᴇʀᴍɪsᴏ ᴘᴏʀ ᴇsᴄʀɪᴛᴏ ᴅᴇ "VPS•GHOST":\n"
+echo -ne "➳ 🔰𝐏𝐀𝐑𝐓𝐍𝐄𝐑𝐒 : [🇵🇪•🇳🇮]:\n"
 msg -bar
 }
 
