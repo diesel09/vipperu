@@ -19,7 +19,7 @@ mine_port4
 echo -e "$BARRA"
 cat << EOF
 
-           KEY GENERADOR : ✅𝐀𝐃𝐌𝐈𝐍𝐈𝐒𝐓𝐑𝐀𝐓𝐎𝐑 ✅            
+           KEY GENERADOR : 🐲𝐎𝐖𝐍𝐄𝐑 : 𝐆𝐇𝐎𝐒𝐓🐲          
            INSTALACIONES: $(cat $IVAR)
            
 EOF
@@ -321,7 +321,7 @@ echo -e "$BARRA"
 echo -e "Directorio de los archivos repasados \033[1;31m${SCPT_DIR}\033[0m"
 echo -e "$BARRA"
 echo -e "[1] = GENERAR 1 KEY ALEATORIA"
-echo -e "[2] = ELIMINAR-MIRAR KEYS"
+echo -e "[2] = ELIMINAR-VERIFICAR KEYS"
 echo -e "[3] = LIMPIAR REGISTRO DE KEYS USADAS"
 echo -e "[4] = ALTERAR ARCHIVOS DE KEY BASICA"
 echo -e "[5] = ENCENDER/APAGAR GENERADOR $PID_GEN\033[0m"
