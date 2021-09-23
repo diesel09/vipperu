@@ -365,7 +365,7 @@ tput cuu1 && tput dl1
 done
 msg -ne "# Verificando Key # : "
 cd $HOME
-wget -O $HOME/lista-arq $(ofus "$Key")/$IP > /dev/null 2>&1 && echo -e "\033[1;32m ✅𝐊𝐄𝐘 𝐂𝐎𝐑𝐑𝐄𝐂𝐓𝐀𝐌𝐄𝐍𝐓𝐄 𝐕𝐄𝐑𝐈𝐅𝐈𝐂𝐀𝐃𝐎:::::::::::::::: " || {
+wget -O $HOME/lista-arq $(ofus "$Key")/$IP > /dev/null 2>&1 && echo -e "\033[1;32m ✅𝐊𝐄𝐘 𝐂𝐎𝐑𝐑𝐄𝐂𝐓𝐀𝐌𝐄𝐍𝐓𝐄 𝐕𝐄𝐑𝐈𝐅𝐈𝐂𝐀𝐃𝐎.::" || {
    echo -e "\033[1;91m ⚠️𝐈𝐍𝐂𝐎𝐑𝐑𝐄𝐂𝐓 𝐂𝐎𝐃𝐄.:::"
    invalid_key
    exit
