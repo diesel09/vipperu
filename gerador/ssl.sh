@@ -126,7 +126,7 @@ rm -rf /root/stunnel.key > /dev/null 2>&1
 return 0
 }
 ssl_stunel_2 () {
-echo -e "\033[1;32m $(fun_trans  "INSTALADOR SSL | VPS-MX")"
+echo -e "\033[1;32m $(fun_trans  "INSTALADOR SSL | VPS-GHOST")"
 msg -bar
 echo -e "\033[1;33m $(fun_trans  "Seleccione una puerta de redirección interna.")"
 echo -e "\033[1;33m $(fun_trans  "Es decir, un puerto en su servidor para SSL")"
@@ -169,7 +169,7 @@ return 0
 }
 clear
 msg -bar
-echo -e "${cor[3]}       INSTALADOR MULTI-SSL | VPS-MX"
+echo -e "${cor[3]}       INSTALADOR MULTI-SSL | VPS-GHOST"
 msg -bar
 echo -e "${cor[1]} Escoja la opcion deseada."
 msg -bar
