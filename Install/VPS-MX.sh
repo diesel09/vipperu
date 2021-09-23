@@ -239,10 +239,7 @@ echo 'echo -e "\033[91m        __     ______  ____       ____  _____ _____  _   
 echo 'echo -e "\033[91m        \ \   / /  _ \/ ___|     |  _ \| ____|  _  \| | | |         " '>> .bashrc
 echo 'echo -e "\033[91m  _______\ \ / /| |_) \___ \     | |_) |  _| | |_)  | | | |_______  " '>> .bashrc
 echo 'echo -e "\033[91m |________\ V / |  __/ ___) | 🔘 |  __/| |___|  _  <| |_| |_______| " '>> .bashrc
-echo 'echo -e "\033[91m           \_/  |_|   |____/     |_|   |_____|_|  \_\\____/         " '>> .bashrc
-echo 'echo -e "\033[91m 🟣ESTA SCRIPT ESTA OPTIMIZADO  PARA SU BUEN USO CON UNA CORRECTA CONFIGURACION. " '>> .bashrc
-echo -echo -e "\033[91m 🟣RECUERDE TENER SOPORTE CON EL DUEÑO OFICIAL:✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹,SIEMPRE Y CUANDO TENGA ACCESO PREMIUM." '>> .bashrc
-echo -echo -e "\033[91m 🟣KEY FREE NO TIENE SOPORTE. " '>> .bashrc 
+echo 'echo -e "\033[91m           \_/  |_|   |____/     |_|   |_____|_|  \_\\____/         " '>> .bashrc 
 echo 'echo "" '>> .bashrc
 echo 'mess1="$(less /etc/newadm/message.txt)" ' >> .bashrc
 echo 'echo "" '>> .bashrc
