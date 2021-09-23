@@ -235,7 +235,11 @@ echo "exit 0" >> /etc/rc.local
 /bin/cp /etc/skel/.bashrc ~/
 echo 'clear' >> .bashrc
 echo 'echo ""' >> .bashrc
-figlet "    -VPS PERU-" | lolcat
+echo 'echo -e "\033[91m        __     ______  ____       ____  _____ _____  _   _          " '>> .bashrc
+echo 'echo -e "\033[91m        \ \   / /  _ \/ ___|     |  _ \| ____|  _  \| | | |         " '>> .bashrc
+echo 'echo -e "\033[91m  _______\ \ / /| |_) \___ \     | |_) |  _| | |_)  | | | |_______  " '>> .bashrc
+echo 'echo -e "\033[91m |________\ V / |  __/ ___) | 🔘 |  __/| |___|  _  <| |_| |_______| " '>> .bashrc
+echo 'echo -e "\033[91m           \_/  |_|   |____/     |_|   |_____|_|  \_\\___/          " '>> .bashrc
 echo 'echo "" '>> .bashrc
 echo 'mess1="$(less /etc/newadm/message.txt)" ' >> .bashrc
 echo 'echo "" '>> .bashrc
