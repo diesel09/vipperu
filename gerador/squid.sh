@@ -87,7 +87,7 @@ fun_squid  () {
   [[ -e $var_squid ]] && rm $var_squid
   return 0
   }
-echo -e "\033[1;32m $(fun_trans "INSTALADOR SQUID VPS-MX")"
+echo -e "\033[1;32m $(fun_trans "INSTALADOR SQUID VPS-GHOST")"
 msg -bar
 fun_ip
 echo -ne " $(fun_trans "Confirme su ip")\033[1;91m"; read -p ": " -e -i $IP ip
@@ -216,7 +216,7 @@ echo -e "http_port $pts" >> $var_squid
 done
 echo -e "
 #nome
-visible_hostname VPS-MX
+visible_hostname VPS-GHOST
 
 via off
 forwarded_for off
@@ -242,7 +242,7 @@ echo -e "http_port $pts" >> $var_squid
 done
 echo -e "
 #nome
-visible_hostname VPS-MX
+visible_hostname VPS-GHOST
 
 via off
 forwarded_for off
