@@ -45,7 +45,7 @@ speedtest --share > speed
 echo ""
 clear
 echo -e "\033[0;34m======================================================\033[0m"
-echo -e " \033[1;33m        SpeedTest \033[1;32m[VPS-MX] :  PERU         \033[0m"
+echo -e " \033[1;33m        SpeedTest \033[1;32m[VPS-GHOST] :  PERU      \033[0m"
 echo -e "\033[0;34m======================================================\033[0m"
 echo ""
 inst_components
