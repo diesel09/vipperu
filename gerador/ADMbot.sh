@@ -31,7 +31,7 @@ USRdatacredi="/etc/BOT-C2/creditos"
 ## INGRESO DE TOKEN BOT
 clear
 msg -bar
-msg -ama "      ## BOT DE GESTION | VPS-MX ## \033[1;31m"
+msg -ama "      ## BOT DE GESTION | VPS-GHOST ## \033[1;31m"
 msg -bar
 if [[ $1 = "id" || -z $(ps aux |grep -v grep |grep -w "ADMbot.sh"|grep dmS|awk '{print $2}') ]]; then
 [[ -z $2 ]] && echo -ne "\033[1;96m >>> Digite el Token del BOT\033[0;92m\nTOKEN: \033[0;97m" && read TOKEN || TOKEN="$2"
@@ -197,7 +197,7 @@ if [[ ! -z $LIBERADOS ]] && [[ $(echo ${LIBERADOS}|grep -w "$3") ]]; then
 local bot_retorno+="$LINE\n"
           bot_retorno+="- - 🔰 ACESSO DE ADMIN LIBERADO 🔰 - - \n"
           bot_retorno+="$LINE\n"
-          bot_retorno+="✌️ Usted ya Puede usar el Bot\n"
+          bot_retorno+="✌️ Usted ya puede usar el Bot\n"
           bot_retorno+="👉 Dele Buen Uso\n"
 		  bot_retorno+="⚙️ Comando Principal: * /menu *\n"
           bot_retorno+="$LINE\n"
@@ -306,7 +306,7 @@ demo3="$(less /etc/BOT-A/SSH-DEMO.log)"
 demor="$(echo $demo3)"
 
 local bot_retorno="*$LINE*\n"
-         bot_retorno+="*🔰 MANAGER VPS-MX 🔰*\n"
+         bot_retorno+="*🔰 MANAGER VPS-GHOST 🔰*\n"
          bot_retorno+="$LINE\n"
 		 bot_retorno+="_▪️ SSH REGISTRADAS:_ ( *$SSH4* )\n"	
          bot_retorno+="_▪️ CONECTADOS:_ ( *$ONLINES* )\n"
