@@ -118,7 +118,7 @@ if [ -e /etc/squid/squid.conf ]; then
 elif [ -e /etc/squid3/squid.conf ]; then
 [[ `grep -c "^#CACHE DO SQUID" /etc/squid3/squid.conf` -gt 0 ]] && squid=$on || squid=$off
 fi
-echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•MX 🐲 ◄◄<<=====       \033[1;37m"
+echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•GHOST 🐲 ◄◄<<=====       \033[1;37m"
 msg -bar
 msg -ama "                OPTIMIZADORES BASICOS "
 msg -bar
