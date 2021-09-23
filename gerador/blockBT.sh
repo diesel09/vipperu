@@ -485,7 +485,7 @@ if [[ ! -z $action ]]; then
 	[[ $action = "unbanspam" ]] && UnBan_SPAM && exit 0
 	[[ $action = "unbanall" ]] && UnBan_ALL && exit 0
 fi
-echo -e "  Panel de Firewall VPS•MX ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}"
+echo -e "  Panel de Firewall VPS•GHOST ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}"
 msg -bar2
 echo -e "  ${Green_font_prefix}0.${Font_color_suffix} Ver la lista actual de prohibidos
 ————————————
