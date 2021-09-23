@@ -139,7 +139,7 @@ fi
 fi 
 }
 
-echo -e "${cor[3]}    AUTENTIFICAR PROXY SQUID ${cor[2]}[VPS-MX]"
+echo -e "${cor[3]}    AUTENTIFICAR PROXY SQUID ${cor[2]}[VPS-GHOST]"
 msg -bar
 unset squid_log1
 [[ -e /usr/bin/squid_log1 ]] && squid_log1="\033[1;32m$(source trans -b pt:${id} "ACTIVO")"
