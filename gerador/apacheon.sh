@@ -10,7 +10,7 @@ MEU_IP2=$(wget -qO- ipv4.icanhazip.com)
 [[ "$MEU_IP" != "$MEU_IP2" ]] && echo "$MEU_IP2" || echo "$MEU_IP"
 }
 IP="$(fun_ip)"
-echo -e "\033[1;96mGestor de Archivos FTP VPS•MX"
+echo -e "\033[1;96mGestor de Archivos FTP VPS•GHOST"
 msg -bar
 echo -e "${cor[4]} [1] >${cor[3]} $(fun_trans "Colocar Archivo Online")"
 echo -e "${cor[4]} [2] >${cor[3]} $(fun_trans "Remover Archivo Online")"
