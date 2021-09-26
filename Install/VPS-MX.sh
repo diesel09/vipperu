@@ -249,7 +249,7 @@ echo 'echo -e "\033[0;33m 🔺Key free no tiene soporte alguno. "'>> .bashrc
 echo 'echo -e "\033[1;35m    "'>> .bashrc
 echo 'echo -e "\033[0;34m   ✅𝐑𝐄𝐒𝐄𝐋𝐋𝐄𝐑 : $mess1 "'>> .bashrc
 echo 'echo "" '>> .bashrc                                               
-echo 'echo -e "\033[97m  PARA MOSTAR EL PANEL DE CONTROL ESCRIBA:  menu "'>> .bashrc
+echo 'echo -e "\033[1.37m  PARA MOSTAR EL PANEL DE CONTROL ESCRIBA:  menu "'>> .bashrc
 echo 'wget -O /etc/versin_script_new https://raw.githubusercontent.com/ADM-PERU/VIP/main/VerScrpt/VercUp &>/dev/null'>> .bashrc
 echo 'echo ""'>> .bashrc
 echo -e "         COMANDO PRINCIPAL PARA ENTRAR AL PANEL "
