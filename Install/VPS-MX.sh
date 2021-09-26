@@ -243,6 +243,7 @@ echo 'echo -e "\033[91m           \_/  |_|   |____/     |_|   |_____|_|  \_\\___
 echo 'echo "" '>> .bashrc
 echo 'mess1="$(less /etc/newadm/message.txt)" ' >> .bashrc
 echo 'echo "" '>> .bashrc
+echo 'echo -e "\033[92m  Mensaje de prueba "'>> .bashrc
 echo 'echo -e "\033[92m   ✅𝐑𝐄𝐒𝐄𝐋𝐋𝐄𝐑 : $mess1 "'>> .bashrc
 echo 'echo "" '>> .bashrc                                               
 echo 'echo -e "\033[97m   PARA MOSTAR PANEL BASH ESCRIBA:  menu "'>> .bashrc
