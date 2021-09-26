@@ -243,7 +243,15 @@ echo 'echo -e "\033[91m           \_/  |_|   |____/     |_|   |_____|_|  \_\\___
 echo 'echo "" '>> .bashrc
 echo 'mess1="$(less /etc/newadm/message.txt)" ' >> .bashrc
 echo 'echo "" '>> .bashrc
-echo 'echo -e "\033[1;35m  Mensaje de prueba "'>> .bashrc
+echo 'echo -e "\033[0;34m  Mensaje de prueba "'>> .bashrc
+echo 'echo -e "\033[1;34m  Mensaje de prueba "'>> .bashrc
+echo 'echo -e "\033[1;36m  Mensaje de prueba "'>> .bashrc
+echo 'echo -e "\033[0;36m  Mensaje de prueba "'>> .bashrc
+echo 'echo -e "\033[1;33m  Mensaje de prueba "'>> .bashrc
+echo 'echo -e "\033[0;31m  Mensaje de prueba "'>> .bashrc
+echo 'echo -e "\033[1;31m  Mensaje de prueba "'>> .bashrc
+echo 'echo -e "\033[0;33m  Mensaje de prueba "'>> .bashrc
+echo 'echo -e "\033[1;35m    "'>> .bashrc
 echo 'echo -e "\033[92m   ✅𝐑𝐄𝐒𝐄𝐋𝐋𝐄𝐑 : $mess1 "'>> .bashrc
 echo 'echo "" '>> .bashrc                                               
 echo 'echo -e "\033[97m   PARA MOSTAR PANEL BASH ESCRIBA:  menu "'>> .bashrc
