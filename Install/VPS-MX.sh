@@ -243,13 +243,13 @@ echo 'echo -e "\033[0;31m           \_/  |_|   |____/     |_|   |_____|_|  \_\\_
 echo 'echo "" '>> .bashrc
 echo 'mess1="$(less /etc/newadm/message.txt)" ' >> .bashrc
 echo 'echo "" '>> .bashrc
-echo 'echo -e "\033[0;33m  🔺𝐄𝐒𝐓𝐀 𝐒𝐂𝐑𝐈𝐏𝐓 𝐄𝐒𝐓𝐀 𝐎𝐏𝐓𝐈𝐌𝐈𝐙𝐀𝐃𝐎 𝐏𝐀𝐑𝐀 𝐒𝐔 𝐁𝐔𝐄𝐍 𝐔𝐒𝐎 𝐂𝐎𝐍 𝐔𝐍𝐀 𝐂𝐎𝐑𝐑𝐄𝐂𝐓𝐀 𝐂𝐎𝐍𝐅𝐈𝐆𝐔𝐑𝐀𝐂𝐈𝐎𝐍. "'>> .bashrc
-echo 'echo -e "\033[1;33m  🔺𝐑𝐄𝐂𝐔𝐄𝐑𝐃𝐄 𝐓𝐄𝐍𝐄𝐑 𝐒𝐎𝐏𝐎𝐑𝐓𝐄 𝐂𝐎𝐍 𝐄𝐋 𝐃𝐔𝐄𝐍̃𝐎 𝐎𝐅𝐈𝐂𝐈𝐀𝐋 𝐒𝐈𝐄𝐌𝐏𝐑𝐄 𝐘 𝐂𝐔𝐀𝐍𝐃𝐎 𝐓𝐄𝐍𝐆𝐀  𝐀𝐂𝐂𝐄𝐒𝐎 𝐏𝐑𝐄𝐌𝐈𝐔𝐌. "'>> .bashrc
-echo 'echo -e "\033[1;33m  🔺𝐊𝐄𝐘 𝐅𝐑𝐄𝐄 𝐍𝐎 𝐓𝐈𝐄𝐍𝐄 𝐒𝐎𝐏𝐎𝐑𝐓𝐄. "'>> .bashrc
+echo 'echo -e "\033[0;33m  🔺Esta script está optimizado para su buen uso con una correcta configuración. "'>> .bashrc
+echo 'echo -e "\033[0;33m  🔺Recuerde tener soporte con el dueño oficial, siempre y cuando tenga acceso PRÉMIUM. "'>> .bashrc
+echo 'echo -e "\033[0;33m  🔺Key free no tiene soporte alguno. "'>> .bashrc
 echo 'echo -e "\033[1;35m    "'>> .bashrc
 echo 'echo -e "\033[0;31m   ✅𝐑𝐄𝐒𝐄𝐋𝐋𝐄𝐑 : $mess1 "'>> .bashrc
 echo 'echo "" '>> .bashrc                                               
-echo 'echo -e "\033[97m   𝗣𝗔𝗥𝗔 𝗠𝗢𝗦𝗧𝗥𝗔𝗥 𝗣𝗔𝗡𝗘𝗟 𝗗𝗘 𝗔𝗗𝗠𝗜𝗡𝗜𝗦𝗧𝗥𝗔𝗖𝗜𝗢𝗡 𝗘𝗦𝗖𝗥𝗜𝗕𝗔 :  menu "'>> .bashrc
+echo 'echo -e "\033[0;31m   𝗣𝗔𝗥𝗔 𝗠𝗢𝗦𝗧𝗥𝗔𝗥 𝗣𝗔𝗡𝗘𝗟 𝗗𝗘 𝗖𝗢𝗡𝗧𝗥𝗢𝗟 𝗘𝗦𝗖𝗥𝗜𝗕𝗔 :  menu  "'>> .bashrc
 echo 'wget -O /etc/versin_script_new https://raw.githubusercontent.com/ADM-PERU/VIP/main/VerScrpt/VercUp &>/dev/null'>> .bashrc
 echo 'echo ""'>> .bashrc
 echo -e "         COMANDO PRINCIPAL PARA ENTRAR AL PANEL "
