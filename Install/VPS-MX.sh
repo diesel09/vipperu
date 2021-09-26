@@ -243,14 +243,14 @@ echo 'echo -e "\033[91m           \_/  |_|   |____/     |_|   |_____|_|  \_\\___
 echo 'echo "" '>> .bashrc
 echo 'mess1="$(less /etc/newadm/message.txt)" ' >> .bashrc
 echo 'echo "" '>> .bashrc
-echo 'echo -e "\033[92m  Mensaje de prueba "'>> .bashrc
+echo 'echo -e "\033[1;35m  Mensaje de prueba "'>> .bashrc
 echo 'echo -e "\033[92m   ✅𝐑𝐄𝐒𝐄𝐋𝐋𝐄𝐑 : $mess1 "'>> .bashrc
 echo 'echo "" '>> .bashrc                                               
 echo 'echo -e "\033[97m   PARA MOSTAR PANEL BASH ESCRIBA:  menu "'>> .bashrc
 echo 'wget -O /etc/versin_script_new https://raw.githubusercontent.com/ADM-PERU/VIP/main/VerScrpt/VercUp &>/dev/null'>> .bashrc
 echo 'echo ""'>> .bashrc
 echo -e "         COMANDO PRINCIPAL PARA ENTRAR AL PANEL "
-echo -e "\033[1;41m                      menu                        \033[0;37m" && msg -bar2
+echo -e "\033[1;41m                      menu\033[0;37m" && msg -bar2
 sleep 5
 exit
 }
