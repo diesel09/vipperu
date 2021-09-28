@@ -37,7 +37,7 @@ infocuenta () {
 v2ray info
 ${SCPinst}/v2ray.sh
 }
-msg -ama "$(fun_trans "MENU V2RAY By GOSHT")"
+msg -ama "$(fun_trans "MENU V2RAY • GHOST")"
 msg -bar
 echo -ne "\033[1;32m [1] > " && msg -azu "$(fun_trans "INSTALAR V2RAY") "
 echo -ne "\033[1;32m [2] > " && msg -azu "$(fun_trans "CAMBIAR PROTOCOLO") "
