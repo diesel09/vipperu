@@ -347,7 +347,4 @@ elif [[ -e /etc/squid3/squid.conf ]]; then
 online_squid
 else
 fun_squid
-fiifun_squid
-fifun_squid
-fifun_squid
 fi
