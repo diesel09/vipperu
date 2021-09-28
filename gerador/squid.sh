@@ -1,5 +1,5 @@
 #!/bin/bash
-#19/06/2021
+#19/12/2019
 
 declare -A cor=( [0]="\033[1;37m" [1]="\033[1;34m" [2]="\033[1;32m" [3]="\033[1;36m" [4]="\033[1;31m" )
 SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && exit
@@ -16,13 +16,11 @@ done <<< "$portas_var"
 i=1
 echo -e "$portas"
 }
-
 fun_ip () {
 MEU_IP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
 MEU_IP2=$(wget -qO- ipv4.icanhazip.com)
 [[ "$MEU_IP" != "$MEU_IP2" ]] && IP="$MEU_IP2" || IP="$MEU_IP"
 }
-
 #ETHOOL SSH
 fun_eth () {
 eth=$(ifconfig | grep -v inet6 | grep -v lo | grep -v 127.0.0.1 | grep "encap:Ethernet" | awk '{print $1}')
@@ -48,7 +46,6 @@ eth=$(ifconfig | grep -v inet6 | grep -v lo | grep -v 127.0.0.1 | grep "encap:Et
            }
      }
 }
-
 fun_bar () {
 comando="$1"
  _=$(
@@ -69,7 +66,6 @@ done
 echo -e " \033[1;33m[\033[1;31m####################\033[1;33m] - \033[1;32m100%\033[0m"
 sleep 1s
 }
-
 fun_squid  () {
   if [[ -e /etc/squid/squid.conf ]]; then
   var_squid="/etc/squid/squid.conf"
@@ -87,7 +83,7 @@ fun_squid  () {
   [[ -e $var_squid ]] && rm $var_squid
   return 0
   }
-echo -e "\033[1;32m $(fun_trans "INSTALADOR SQUID VPS-GHOST")"
+echo -e "\033[1;32m $(fun_trans "INSTALADOR SQUID By GOSHT")"
 msg -bar
 fun_ip
 echo -ne " $(fun_trans "Confirme su ip")\033[1;91m"; read -p ": " -e -i $IP ip
@@ -216,7 +212,7 @@ echo -e "http_port $pts" >> $var_squid
 done
 echo -e "
 #nome
-visible_hostname VPS-GHOST
+visible_hostname ADM▪︎GOSHT
 
 via off
 forwarded_for off
@@ -242,7 +238,7 @@ echo -e "http_port $pts" >> $var_squid
 done
 echo -e "
 #nome
-visible_hostname VPS-GHOST
+visible_hostname ADM▪︎GOSHT
 
 via off
 forwarded_for off
@@ -263,7 +259,6 @@ for ufww in $(mportas|awk '{print $2}'); do
 ufw allow $ufww > /dev/null 2>&1
 done
 }
-
 online_squid () {
 payload="/etc/payloads"
 echo -e "\033[1;33m$(fun_trans  "SQUID CONFIGURADO")"
@@ -294,7 +289,7 @@ tput cuu1 && tput dl1
 done
 host="$hos/"
 [[ -z $host ]] && return 1
-[[ `grep -c "^$host" $payload` -eq 1 ]] &&:echo -e "${cor[4]}$(fun_trans  "Host ya Existe")${cor[0]}" && return 1
+[[ `grep -c "^$host" $payload` -eq 1 ]] &&:echo -e "${cor[4]}$(fun_trans  "Host ya Exciste")${cor[0]}" && return 1
 echo "$host" >> $payload && grep -v "^$" $payload > /tmp/a && mv /tmp/a $payload
 echo -e "${cor[4]}$(fun_trans  "Host Agregado con Exito")"
 msg -bar
