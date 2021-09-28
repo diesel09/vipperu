@@ -212,7 +212,7 @@ echo -e "http_port $pts" >> $var_squid
 done
 echo -e "
 #nome
-visible_hostname ADM▪︎GOSHT
+visible_hostname ADM▪︎GHOST
 
 via off
 forwarded_for off
@@ -238,7 +238,7 @@ echo -e "http_port $pts" >> $var_squid
 done
 echo -e "
 #nome
-visible_hostname ADM▪︎GOSHT
+visible_hostname ADM▪︎GHOST
 
 via off
 forwarded_for off
@@ -289,9 +289,9 @@ tput cuu1 && tput dl1
 done
 host="$hos/"
 [[ -z $host ]] && return 1
-[[ `grep -c "^$host" $payload` -eq 1 ]] &&:echo -e "${cor[4]}$(fun_trans  "Host ya Exciste")${cor[0]}" && return 1
+[[ `grep -c "^$host" $payload` -eq 1 ]] &&:echo -e "${cor[4]}$(fun_trans  "Host existente")${cor[0]}" && return 1
 echo "$host" >> $payload && grep -v "^$" $payload > /tmp/a && mv /tmp/a $payload
-echo -e "${cor[4]}$(fun_trans  "Host Agregado con Exito")"
+echo -e "${cor[4]}$(fun_trans  "Host agregado con exito")"
 msg -bar
 cat $payload | awk -F "/" '{print $1,$2,$3,$4}'
 msg -bar
