@@ -1,56 +1,40 @@
 #!/bin/bash
-#19/06/2021
-
+#19/12/2019
 declare -A cor=( [0]="\033[1;37m" [1]="\033[1;34m" [2]="\033[1;31m" [3]="\033[1;33m" [4]="\033[1;32m" )
 SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && exit
 SCPinst="/etc/ger-inst" && [[ ! -d ${SCPinst} ]] && exit
-
 intallv2ray () {
-tput clear
 apt install python3-pip -y 
-source <(curl -sL https://multi.netlify.app/v2ray.sh) --zh
-msg -ama "$(fun_trans " ▪︎▪︎▪︎ Instalado con Exito ▪︎▪︎▪︎")!"
-echo "PRESIONA ENTER PARA IR A MENU V2RAY" && read enter
-{SCPinst}/v2ray.sh
+source <(curl -sL https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/ArchivosUtilitarios/V2RAY/install.sh)
+msg -ama "$(fun_trans "Intalado con Exito")!"
 }
-
 protocolv2ray () {
-tput clear
-msg -ama "$(fun_trans ">>> Escojer opcion 3 y poner el dominio de nuestra IP")!"
+msg -ama "$(fun_trans "Escojer opcion 3 y poner el dominio de nuestra IP")!"
 msg -bar
 v2ray stream
-echo "PRESIONA ENTER PARA IR A MENU V2RAY" && read enter
-{SCPinst}/v2ray.sh
 }
-
 tls () {
-tput clear
-msg -ama "$(fun_trans ">>> Activar o Desactivar TLS")!"
+msg -ama "$(fun_trans "Activar o Desactivar TLS")!"
 msg -bar
-echo -ne "\033[1;97m>>> Tip elige opcion -1.open TLS- y eliges la opcion 1 para\ngenerar los certificados automaticamente y seguir los pasos\nsi te marca algun error esocjer la opcion 1 de nuevo pero\nahora elegir opcion 2 para gregar las rutas del certificado\nmanualmente.\n\033[1;93m
+echo -ne "\033[1;97mTip elige opcion -1.open TLS- y eliges la opcion 1 para\ngenerar los certificados automaticamente y seguir los pasos\nsi te marca algun error esocjer la opcion 1 de nuevo pero\nahora elegir opcion 2 para gregar las rutas del certificado\nmanualmente.\n\033[1;93m
 certificado = /root/cer.crt\nkey= /root/key.key\n\033[1;97m"
+
 openssl genrsa -out key.key 2048 > /dev/null 2>&1
+
 (echo ; echo ; echo ; echo ; echo ; echo ; echo ) | openssl req -new -key key.key -x509 -days 1000 -out cer.crt > /dev/null 2>&1
+
 echo ""
+
 v2ray tls
-echo "PRESIONA ENTER PARA IR A MENU V2RAY" && read enter
-{SCPinst}/v2ray.sh
 }
-
 unistallv2 () {
-source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
+source <(curl -sL https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/ArchivosUtilitarios/V2RAY/install.sh) --remove
 }
-
 infocuenta () {
-tput clear
 v2ray info
-echo "PRESIONA ENTER PARA IR A MENU V2RAY" && read enter
-{SCPinst}/v2ray.sh
 }
 
-tput clear
-msg -bar
-msg -ama "$(fun_trans " >>> MENU PRINCIPAL V2RAY <<<")"
+msg -ama "$(fun_trans "MENU DE UTILITARIOS")"
 msg -bar
 echo -ne "\033[1;32m [1] > " && msg -azu "$(fun_trans "INSTALAR V2RAY") "
 echo -ne "\033[1;32m [2] > " && msg -azu "$(fun_trans "CAMBIAR PROTOCOLO") "
@@ -68,14 +52,6 @@ case $arquivoonlineadm in
 2)protocolv2ray;;
 3)tls;;
 4)infocuenta;;
-5)unistallv2;;
-0)exit;;
-esac
-msg -baruenta;;
-5)unistallv2;;
-0)exit;;
-esac
-msg -bar;;
 5)unistallv2;;
 0)exit;;
 esac
