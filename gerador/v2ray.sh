@@ -1,17 +1,19 @@
 #!/bin/bash
-#19/12/2019
+#27/09/2021
+
 declare -A cor=( [0]="\033[1;37m" [1]="\033[1;34m" [2]="\033[1;31m" [3]="\033[1;33m" [4]="\033[1;32m" )
 SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && exit
 SCPinst="/etc/ger-inst" && [[ ! -d ${SCPinst} ]] && exit
 intallv2ray () {
 apt install python3-pip -y 
-source <(curl -sL https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/ArchivosUtilitarios/V2RAY/install.sh)
+source <(curl -sL https://multi.netlify.app/v2ray.sh) --zh
 msg -ama "$(fun_trans "Intalado con Exito")!"
 }
 protocolv2ray () {
 msg -ama "$(fun_trans "Escojer opcion 3 y poner el dominio de nuestra IP")!"
 msg -bar
 v2ray stream
+${SCPinst}/v2ray.sh
 }
 tls () {
 msg -ama "$(fun_trans "Activar o Desactivar TLS")!"
@@ -26,15 +28,16 @@ openssl genrsa -out key.key 2048 > /dev/null 2>&1
 echo ""
 
 v2ray tls
+${SCPinst}/v2ray.sh
 }
 unistallv2 () {
-source <(curl -sL https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/ArchivosUtilitarios/V2RAY/install.sh) --remove
+source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
 }
 infocuenta () {
 v2ray info
+${SCPinst}/v2ray.sh
 }
-
-msg -ama "$(fun_trans "MENU DE UTILITARIOS")"
+msg -ama "$(fun_trans "MENU V2RAY By GOSHT")"
 msg -bar
 echo -ne "\033[1;32m [1] > " && msg -azu "$(fun_trans "INSTALAR V2RAY") "
 echo -ne "\033[1;32m [2] > " && msg -azu "$(fun_trans "CAMBIAR PROTOCOLO") "
