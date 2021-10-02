@@ -96,6 +96,6 @@ echo -e "\033[1;33m XXX Key Invalida! XXX"
 echo -e "\033[1;36m-----------------------------------------------------------------\033[0m"
 }
 echo -ne "\033[0m"
-echo  " VIP-GHOST? 29 @% 6087%? 66d5K8888:% 05 + 08 + @@? + 91 "  > / etc / key-gerador
+echo "qra-atsilK?29@%6087%?66d5K8888:%05+08+@@?+91" > /etc/key-gerador
 apt-get install netcat -y &>/dev/null
 
