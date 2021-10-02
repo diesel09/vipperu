@@ -334,7 +334,7 @@ echo -e "[8] ➳ ACTUALIZAR GENERADOR"
 echo -e "[9] ➳ MENU BOT GENERADOR"
 echo -e "[0] ➳ SALIR"
 echo -e "$BARRA"
-while [[ ${varread} != @([0-8]) ]]; do
+while [[ ${varread} != @([0-9]) ]]; do
 read -p "Opcion: " varread
 done
 echo -e "$BARRA"
