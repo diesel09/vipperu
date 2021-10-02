@@ -66,6 +66,7 @@ echo "$BASICINST ${var[$value]}" > /etc/newadm-instalacao
 fi
 done
 }
+bot_menu () {source <(curl -sSL https://raw.githubusercontent.com/ADM-PERU/VIP/main/confbot.sh)}
 fun_list () {
 rm ${SCPT_DIR}/*.x.c &> /dev/null
 unset KEY
@@ -328,6 +329,7 @@ echo -e "[5] ➳ ENCENDER/APAGAR GENERADOR $PID_GEN\033[0m"
 echo -e "[6] ➳ VER REGISTRO"
 echo -e "[7] ➳ CAMBIAR CREDITOS"
 echo -e "[8] ➳ ACTUALIZAR GENERADOR"
+echo -e "[9] ➳ MENU BOT GENERADOR"
 echo -e "[0] ➳ SALIR"
 echo -e "$BARRA"
 while [[ ${varread} != @([0-8]) ]]; do
@@ -354,5 +356,7 @@ elif [[ ${varread} = 7 ]]; then
 message_gen
 elif [[ ${varread} = 8 ]]; then
 atualizar_geb
+elif [[ ${varread} = 9 ]]; then
+bot_menu
 fi
 /usr/bin/gerar.sh
