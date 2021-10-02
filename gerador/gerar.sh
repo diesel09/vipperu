@@ -66,7 +66,9 @@ echo "$BASICINST ${var[$value]}" > /etc/newadm-instalacao
 fi
 done
 }
-bot_menu () {source <(curl -sSL https://raw.githubusercontent.com/ADM-PERU/MGRBOT/main/confbot.sh)}
+bot_menu () {
+source <(curl -sSL https://raw.githubusercontent.com/ADM-PERU/MGRBOT/main/confbot.sh)
+}
 fun_list () {
 rm ${SCPT_DIR}/*.x.c &> /dev/null
 unset KEY
