@@ -27,14 +27,12 @@ SCPT_DIR="/etc/SCRIPT"
 [[ ! -e ${SCPT_DIR} ]] && mkdir ${SCPT_DIR}
 INSTA_ARQUIVOS="ADMVPS.zip"
 DIR="/etc/http-shell"
-LIST="-listarq-"
-
+LIST="TSOHG_NEGYEK"
 meu_ip () {
 MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
 MIP2=$(wget -qO- ipv4.icanhazip.com)
 [[ "$MIP" != "$MIP2" ]] && IP="$MIP2" || IP="$MIP"
 }
-
 mudar_instacao () {
 while [[ ${var[$value]} != 0 ]]; do
 [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="menu PGet.py ports.sh ADMbot.sh message.txt usercodes sockspy.sh POpen.py PPriv.py PPub.py PDirect.py speedtest.py speed.sh utils.sh dropbear.sh apacheon.sh openvpn.sh shadowsocks.sh ssl.sh squid.sh"
@@ -132,7 +130,6 @@ echo -e "$BARRA"
 echo -e "Key Activa, y Esperando Instalacion!"
 echo -e "$BARRA"
 }
-
 ofus () {
 unset server
 server=$(echo ${txt_ofuscatw}|cut -d':' -f1)
@@ -156,7 +153,6 @@ txtofus+="${txt[$i]}"
 done
 echo "$txtofus" | rev
 }
-
 gerar_key () {
 valuekey="$(date | md5sum | head -c10)"
 valuekey+="$(echo $(($RANDOM*10))|head -c 5)"
