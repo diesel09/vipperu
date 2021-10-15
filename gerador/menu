@@ -213,7 +213,7 @@ openvpn)
 [[ -z $OVPN ]] && local OVPN="\033[1;31m OPENVPN-TCP: \033[1;32m"
 OVPN+="$Port ";;
 stunnel4|stunnel)
-[[ -z $SSL ]] && local SSL="\033[1;31m SSL: \033[1;32m"
+[[ -z $SSL ]] && local SSL="\033[1;31m SSL PREMIUM: \033[1;32m"
 SSL+="$Port ";;
 python|python3)
 [[ -z $PY3 ]] && local PY3="\033[1;31m SOCKS/PYTHON: \033[1;32m"
@@ -537,7 +537,7 @@ case $1 in
 "squid.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "SQUID ---------------------------- $(pid_inst squid)";;
 "dropbear.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "DROPBEAR ------------------------- $(pid_inst dropbear)";;
 "openvpn.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "OPENVPN -------------------------- $(pid_inst openvpn)";;
-"ssl.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "SSL ------------------------------ $(pid_inst stunnel4)";;
+"ssl.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "SSL PREMIUM ---------------------- $(pid_inst stunnel4)";;
 "shadowsocks.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "SHADOWSOCKS-NORMAL --------------- $(pid_inst ssserver)";;
 "Shadowsocks-libev.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "SHADOWSOCKS-LIBEV ---------------- $(pid_inst ss-server)";;
 "Shadowsocks-R.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "SHADOWSOCKS-R -------------------- ${valuest}";; 
