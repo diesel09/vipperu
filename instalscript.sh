@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cp .bashrc .bashrc.backup
 killall apt apt-get
 dpkg --configure -a
 apt-get install software-properties-common -y
