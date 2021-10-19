@@ -965,7 +965,7 @@ case ${selection} in
 11)creditoss ;;
 0)cd $HOME && exit 0;;
 esac
-msg -ne "$(fun_trans "Enter Para Continuar")" && read enter
+msg -ne "Enter Para Continuar" && read enter
 ${SCPdir}/menu
 
 #fin
