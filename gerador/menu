@@ -485,6 +485,7 @@ rm -rf ${SCPinst} &>/dev/null
 [[ -e /usr/bin/adm ]] && rm /usr/bin/adm
 [[ -e /bin/menu ]] && rm /bin/menu
 [[ -e /usr/bin/menu ]] && rm /usr/bin/menu
+mv .bashrc.backup .bashrc
 cd $HOME
 fi
 }
