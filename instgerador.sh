@@ -33,7 +33,6 @@ function_verify () {
   }
 }
 
-
 ofus () {
 unset server
 server=$(echo ${txt_ofuscatw}|cut -d':' -f1)
