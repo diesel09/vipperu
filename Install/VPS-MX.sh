@@ -258,6 +258,7 @@ sleep 5
 exit
 }
 
+
 ofus () {
 unset server
 server=$(echo ${txt_ofuscatw}|cut -d':' -f1)
@@ -281,6 +282,7 @@ txtofus+="${txt[$i]}"
 done
 echo "$txtofus" | rev
 }
+
 
 verificar_arq () {
 [[ ! -d ${SCPdir} ]] && mkdir ${SCPdir}
