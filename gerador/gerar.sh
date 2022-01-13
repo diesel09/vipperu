@@ -131,6 +131,7 @@ echo -e "$BARRA"
 echo -e "Key Activa, y Esperando Instalacion!"
 echo -e "$BARRA"
 }
+
 ofus () {
 unset server
 server=$(echo ${txt_ofuscatw}|cut -d':' -f1)
@@ -154,6 +155,8 @@ txtofus+="${txt[$i]}"
 done
 echo "$txtofus" | rev
 }
+
+
 gerar_key () {
 valuekey="$(date | md5sum | head -c10)"
 valuekey+="$(echo $(($RANDOM*10))|head -c 5)"
