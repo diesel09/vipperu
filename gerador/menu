@@ -122,7 +122,11 @@ fi
 }
 
 atualiza_fun () {
-wget https://raw.githubusercontent.com/ADM-PERU/VIP/main/Install/VPS-MX.sh -O VPS-MX; chmod 777 VPS-MX; ./VPS-MX
+sleep 1
+echo -e "\033[1;33m ...PROCEDE A ACTUALIZAR SCRIPT... \033[0m"
+sleep 1
+clear
+wget https://raw.githubusercontent.com/ADM-PERU/VIP/main/Install/VPS-MX.sh -O VPS-MX; chmod 777 VPS-MX; ./VPS-MX &> /dev/null
 msg -bar2
 }
 
