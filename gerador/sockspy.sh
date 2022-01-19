@@ -66,10 +66,16 @@ screen -dmS getpy python ${SCPinst}/PGet.py -b "0.0.0.0:$1" -p "${SCPinst}/pwd.p
 }
 
 PythonDic_fun () {
-echo -e "\033[1;97mSelecciona Puerto Local\033[1;37m" 
+echo -e "\033[1;97m>>> Selecciona Puerto Local <<<\033[1;37m" 
 msg -bar
-echo -ne "Digite Un Puerto SSH/DROPBEAR activo: \033[1;37m" && read puetoantla 
- msg -bar
+echo -ne "Digite Un Puerto SSH/DROPBEAR activo: \033[1;37m"
+read -p " Elige : " puetoantla 
+  msg -bar
+echo -e "Respuesta de Encabezado (101, 200, 484, 500, etc) : \033[1;37m"
+read -p " Elige : " respo_stat 
+if [[ -z $respo_stat  ]]; then
+	respo_stat="200"
+fi
 (
 less << PYTHON  > /etc/ger-inst/PDirect.py
 import socket, threading, thread, select, signal, sys, time, getopt
