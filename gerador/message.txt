@@ -1,1 +1,1 @@
-🚀ADM🚀
+$message_from_first_name $message_from_last_name
