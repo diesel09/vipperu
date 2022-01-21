@@ -964,7 +964,7 @@ case ${selection} in
 6)canbio_color;;
 7)monservi_fun;;
 8)fun_autorun;;
-9)atualiza_fun;;
+9)actualiza_fun;;
 10)remove_script;;
 11)creditoss ;;
 0)cd $HOME && exit 0;;
