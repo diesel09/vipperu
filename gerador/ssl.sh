@@ -426,6 +426,7 @@ echo -e "ps x | grep 'pythonwe' | grep -v 'grep' || screen -dmS pythonwe python 
 
 echo -e "\033[1;32m            INSTALACION COMPLETADA "
 read enter
+}
 fi
 if [ "$opci" = "3" ];then
 del_ssl () {
