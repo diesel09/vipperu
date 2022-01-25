@@ -61,7 +61,6 @@ function_verify () {
   echo -e "\033[1;31m=====================================================\n\n\n"
   [[ -d /etc/SCRIPT ]] && rm -rf /etc/SCRIPT
   exit 1
-  } || {
 }
 
 meu_ip
