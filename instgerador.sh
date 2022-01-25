@@ -53,15 +53,35 @@ echo "$IP" > /usr/bin/vendor_code
 }
 
 function_verify () {
-  permited=$(curl -sSL "https://raw.githubusercontent.com/ADM-PERU/MGRBOT/main/TeleBotGen/Control/Control-IP")
+#echo -e "verificando..."
+# check_ip
+ permited=$(curl -sSL "https://raw.githubusercontent.com/ADM-PERU/MGRBOT/main/TeleBotGen/Control/Control-IP")
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
-  echo -e "\n\n\n\033[1;31m====================================================="
-  echo -e "\033[1;31m       ¡LA IP $(wget -qO- ipv4.icanhazip.com) NO ESTA AUTORIZADA!"
-  echo -e "\033[1;31m                CONTACTE A @GENKEY_BOT"
-  echo -e "\033[1;31m=====================================================\n\n\n"
-  [[ -d /etc/SCRIPT ]] && rm -rf /etc/SCRIPT
+  clear
+  echo -e "\n\n\n\e[31m====================================================="
+  echo -e "\e[31m         ¡LA IP $(wget -qO- ipv4.icanhazip.com) NO ESTA AUTORIZADO!\n     SI DESEAS USAR EL BOT-GEN CONTACTE A @GENKEY_BOT\n                       VIA TELEGRAM."
+  echo -e "\e[31m=====================================================\n\n\n\e[0m"
+  [[ -d /etc/ADM-db ]] && rm -rf /etc/ADM-db
+[[ ! -e "/bin/ShellBot.sh" ]] && rm /bin/ShellBot.sh
   exit 1
+  } || {
+ ### INTALAR VERCION DE SCRIPT
+  clear
+  echo -e "\n\n\n\e[32m====================================================="
+  echo -e "\e[32m        ¡LA IP $(wget -qO- ipv4.icanhazip.com) ESTA AUTORIZADA!\n   AUTORIZADO CORRECTAMENTE PARA EL USO DEL BOT-GEN.\n                   ESPERE PORFAVOR..."
+  echo -e "\e[32m=====================================================\n\n\n\e[0m"
+  sleep 5
+  CIDdir=/etc/ADM-db && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}
+  v1=$(curl -sSL "https://raw.githubusercontent.com/ADM-PERU/MGRBOT/main/Vercion")
+  echo "$v1" > /etc/ADM-db/vercion
+  echo "@GENKEY_BOT" > ${CIDdir}/resell
+  
+  }
 }
+
+echo -e "verificando..."
+check_ip
+function_verify
 
 meu_ip
 echo -e "\033[1;33m descargando archivos para GENERADOR..."
