@@ -62,7 +62,6 @@ function_verify () {
   [[ -d /etc/SCRIPT ]] && rm -rf /etc/SCRIPT
   exit 1
   } || {
-  }
 }
 
 meu_ip
