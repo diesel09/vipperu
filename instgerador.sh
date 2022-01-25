@@ -53,7 +53,8 @@ echo "$IP" > /usr/bin/vendor_code
 }
 
 function_verify () {
-#SECURITY : 
+#echo -e "verificando..."
+# check_ip
  permited=$(curl -sSL "https://raw.githubusercontent.com/ADM-PERU/VIP/main/Control/Control-IP")
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
@@ -64,7 +65,7 @@ function_verify () {
 [[ ! -e "/bin/ShellBot.sh" ]] && rm /bin/ShellBot.sh
   exit 1
   } || {
-# VERSION SCRIPT
+ ### INTALAR VERCION DE SCRIPT
   clear
   echo -e "\n\n\n\e[32m====================================================="
   echo -e "\e[32m        ¡LA IP $(wget -qO- ipv4.icanhazip.com) ESTA AUTORIZADA!\n  ✅AUTORIZADO CORRECTAMENTE PARA EL USO DEL GENERADOR.\n                   ESPERE PORFAVOR..."
