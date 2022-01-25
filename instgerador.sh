@@ -53,19 +53,18 @@ echo "$IP" > /usr/bin/vendor_code
 }
 
 function_verify () {
-#echo -e "verificando..."
-# check_ip
+#SECURITY : 
  permited=$(curl -sSL "https://raw.githubusercontent.com/ADM-PERU/VIP/main/Control/Control-IP")
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
   echo -e "\n\n\n\e[31m====================================================="
-  echo -e "\e[31m         ¡LA IP $(wget -qO- ipv4.icanhazip.com) NO ESTA AUTORIZADO!\n     SI DESEAS USAR EL BOT-GEN CONTACTE A @GENKEY_BOT\n                       VIA TELEGRAM."
+  echo -e "\e[31m         ¡LA IP $(wget -qO- ipv4.icanhazip.com) NO ESTA AUTORIZADO!\n     SI DESEAS USAR EL GENERADOR DE KEY  A @GENKEY_BOT\n                       VIA TELEGRAM."
   echo -e "\e[31m=====================================================\n\n\n\e[0m"
   [[ -d /etc/ADM-db ]] && rm -rf /etc/ADM-db
 [[ ! -e "/bin/ShellBot.sh" ]] && rm /bin/ShellBot.sh
   exit 1
   } || {
- ### INTALAR VERCION DE SCRIPT
+# VERSION SCRIPT
   clear
   echo -e "\n\n\n\e[32m====================================================="
   echo -e "\e[32m        ¡LA IP $(wget -qO- ipv4.icanhazip.com) ESTA AUTORIZADA!\n   AUTORIZADO CORRECTAMENTE PARA EL USO DEL BOT-GEN.\n                   ESPERE PORFAVOR..."
