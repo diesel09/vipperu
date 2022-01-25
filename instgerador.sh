@@ -6,6 +6,34 @@ SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FETS1QRVJVL1ZJUC9tYWluL2d
 SUB_DOM='base64 -d'
 rm $(pwd)/$0
 
+check_ip () {
+MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
+MIP2=$(wget -qO- ipv4.icanhazip.com)
+[[ "$MIP" != "$MIP2" ]] && IP="$MIP2" || IP="$MIP"
+echo "$IP" > /usr/bin/vendor_code
+}
+
+function_verify () {
+ check_ip
+ permited=$(curl -sSL "https://raw.githubusercontent.com/ADM-PERU/VIP/main/TeleBotGen/Control/Control-IP")
+  [[ $(echo $permited|grep "${IP}") = "" ]] && {
+  clear
+  echo -e "\n\n\n\e[31m====================================================="
+  echo -e "\e[31m      ¡LA IP $(wget -qO- ipv4.icanhazip.com) NO ESTA AUTORIZADA!"
+  echo -e "\e[31m=====================================================\n\n\n\e[0m"
+  [[ -d /etc/ADM-db ]] && rm -rf /etc/ADM-db
+  exit 1
+  } || {
+ ### INTALAR VERCION DE SCRIPT
+  clear
+  echo -e "\n\n\n\e[32m====================================================="
+  echo -e "\e[32m      ¡LA IP $(wget -qO- ipv4.icanhazip.com) ESTA AUTORIZADA!"
+  echo -e "\e[32m=====================================================\n\n\n\e[0m"
+  sleep 2
+  [[ -d /etc/ADM-db ]] && rm -rf /etc/ADM-db
+  }
+}
+
 ofus () {
 unset server
 server=$(echo ${txt_ofuscatw}|cut -d':' -f1)
@@ -50,17 +78,6 @@ MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1
 MIP2=$(wget -qO- ipv4.icanhazip.com)
 [[ "$MIP" != "$MIP2" ]] && IP="$MIP2" || IP="$MIP"
 echo "$IP" > /usr/bin/vendor_code
-}
-
-function_verify () {
-  permited=$(curl -sSL "https://raw.githubusercontent.com/ADM-PERU/VIP/main/TeleBotGen/Control/Control-IP")
-  [[ $(echo $permited|grep "${IP}") = "" ]] && {
-  echo -e "\n\n\n\033[1;31m====================================================="
-  echo -e "\033[1;31m       ¡LA IP $(wget -qO- ipv4.icanhazip.com) NO ESTA AUTORIZADA!"
-  echo -e "\033[1;31m                CONTACTE A @GENKEY_BOT"
-  echo -e "\033[1;31m=====================================================\n\n\n"
-  [[ -d /etc/SCRIPT ]] && rm -rf /etc/SCRIPT
-  exit 1
 }
 
 meu_ip
