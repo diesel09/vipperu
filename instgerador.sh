@@ -16,7 +16,7 @@ echo "$IP" > /usr/bin/vendor_code
 function_verify () {
 #echo -e "verificando..."
 # check_ip
- permited=$(curl -sSL "https://raw.githubusercontent.com/ADM-PERU/VIP/main/Control/Control-IP")
+ permited=$(curl -sSL "https://raw.githubusercontent.com/diesel09/vipperu/main/Control/Control-IP")
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
   echo -e "\n\n\n\e[31m====================================================="
